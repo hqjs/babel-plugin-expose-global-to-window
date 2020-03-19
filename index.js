@@ -46,7 +46,7 @@ module.exports = function({ types: t }) {
       },
       FunctionDeclaration(nodePath) {
         const { id } = nodePath.node;
-        const binding = programPath.scope.bindings[id.name];
+        const binding = id && programPath.scope.bindings[id.name];
         if (isModule.value || !binding || binding.path !== nodePath) return;
         programPath.node.body.push(assignToWindow(t, id));
       }
