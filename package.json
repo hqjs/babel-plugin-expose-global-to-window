@@ -1,6 +1,6 @@
 {
   "name": "@hqjs/babel-plugin-expose-global-to-window",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Explicitly expose global variables and functions to window in non module script",
   "main": "index.js",
   "scripts": {
